@@ -1,0 +1,6 @@
+@ExamenII_PrograWeb_HostAddress = http://localhost:5227
+
+GET {{ExamenII_PrograWeb_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
