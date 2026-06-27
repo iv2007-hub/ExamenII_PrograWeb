@@ -1,1 +1,5 @@
-﻿/ExamenII_PrograWeb.sln
+﻿bin/
+obj/
+.idea/
+
+ExamenII_PrograWeb/Config/firebase-credentials-*.json
