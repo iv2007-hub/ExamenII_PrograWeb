@@ -12,18 +12,18 @@ namespace ExamenII_PrograWeb.Services;
 
 public class AuthService
 {
-    private readonly FirestoreService _firestoreService;
+    private readonly FirebaseService _firebaseService;
     private readonly IConfiguration _configuration;
 
-    public AuthService(FirestoreService firestoreService, IConfiguration configuration)
+    public AuthService(FirebaseService firestoreService, IConfiguration configuration)
     {
-        _firestoreService = firestoreService;
+        _firebaseService = firestoreService;
         _configuration = configuration;
     }
 
     public async Task<User> Register(RegisterRequestDto dto)
     {
-        var collection = _firestoreService.GetCollection("users");
+        var collection = _firebaseService.GetCollection("users");
         var existing = await collection.WhereEqualTo("Email", dto.Email).GetSnapshotAsync();
 
         if (existing.Count > 0)
@@ -50,7 +50,7 @@ public class AuthService
 
     public async Task<string> Login(LoginRequestDto dto)
     {
-        var collection = _firestoreService.GetCollection("users");
+        var collection = _firebaseService.GetCollection("users");
         var snapshot = await collection.WhereEqualTo("Email", dto.Email).GetSnapshotAsync();
 
         if (snapshot.Count == 0)

@@ -1,6 +1,6 @@
 ﻿using Google.Cloud.Firestore;
 
-namespace ExamenII_PrograWeb.services;
+namespace ExamenII_PrograWeb.Services;
 
 public class FirebaseService
 {
