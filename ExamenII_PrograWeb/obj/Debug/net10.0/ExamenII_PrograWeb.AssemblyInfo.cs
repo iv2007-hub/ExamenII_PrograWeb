@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExamenII_PrograWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a89c3b861017f1e7b07581bbc0d7dcc253ba40e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExamenII_PrograWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExamenII_PrograWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
